@@ -4,54 +4,210 @@
 	},
 	"menu": [
 		{
-			"href": "index.html",
-			"name": "Главная"
+			"href": "",
+			"name": "Новости"
+		},
+		{
+			"href": "",
+			"name": "Обзоры"
+		},
+		{
+			"href": "",
+			"name": "Музыка"
+		},
+		{
+			"href": "",
+			"name": "Архитектура"
+		},
+		{
+			"href": "",
+			"name": "Кино"
+		},
+		{
+			"href": "",
+			"name": "Театр"
+		},
+		{
+			"href": "",
+			"name": "Литература"
+		},
+		{
+			"href": "",
+			"name": "Религия"
+		},
+		{
+			"href": "",
+			"name": "Живопись"
 		}
 	],
 	"nav": {
-		"logo": {
-			"src": "/images/",
-			"alt": "",
-			"width": "",
-			"height": "",
-			"href": "index.html",
-			"name": ""
-		}
+		"title": "Новости культуры"
+	},
+	"news": {
+		"title": "Новости",
+		"articles": [
+			{
+				"picture": {
+					"src": "images/musicAward.png",
+					"alt": "Премия Russian World Music Awards"
+				},
+				"href": "",
+				"main": true,
+				"title": "Новости культуры России и всего мира",
+				"description": "В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards"
+			},
+			{
+				"picture": {
+					"src": "images/leonov.png",
+					"alt": "Памятник Евгению Леонову"
+				},
+				"href": "",
+				"main": false,
+				"title": "Открытие нового памятника Евгению Леонову",
+				"description": "10 сентября в 15:00 был открыт памятник писателю"
+			},
+			{
+				"picture": {
+					"src": "images/patrick.png",
+					"alt": "Святой Патрик"
+				},
+				"href": "",
+				"main": false,
+				"title": "День и ночь св. Патрика: встреча старых друзей",
+				"description": "Не Джойсом единым живет Ирландия!"
+			}
+		]
 	},
 	"popup": {},
+	"recently": [
+		{
+			"mark": true,
+			"modifier": "underwater-hotel",
+			"title": "Подводный отель",
+			"text": "Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти",
+			"picture": {
+				"src": "images/underwaterHotel.jpg",
+				"alt": "Отель в Думай под водой"
+			}
+		},
+		{
+			"mark": false,
+			"modifier": "something",
+			"title": "Something",
+			"text": "hm...",
+			"picture": {
+				"src": "",
+				"alt": ""
+			}
+		}
+	],
+	"reviews": {
+		"title": "Обзоры",
+		"articles": [
+			{
+				"picture": {
+					"src": "",
+					"alt": "Выставка «Шальные годы Монпарнаса»"
+				},
+				"href": "",
+				"title": "«Шальные годы» Монпарнаса",
+				"description": "В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»"
+			},
+			{
+				"picture": {
+					"src": "",
+					"alt": "Анатомия за 30 секунд"
+				},
+				"href": "",
+				"title": "Анатомия за 30 секунд",
+				"description": "Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос"
+			},
+			{
+				"picture": {
+					"src": "",
+					"alt": "Русские балетные сезоны »"
+				},
+				"href": "",
+				"title": "Русские балетные сезоны",
+				"description": "В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре"
+			},
+			{
+				"picture": {
+					"src": "",
+					"alt": "Премьера спектакля «Чудаки и зануды»"
+				},
+				"href": "",
+				"title": "Сферические чудаки",
+				"description": "Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»"
+			}
+		],
+		"pagination": [
+			{
+				"number": "1",
+				"href": "",
+				"active": true
+			},
+			{
+				"number": "2",
+				"href": ""
+			},
+			{
+				"number": "3",
+				"href": ""
+			},
+			{
+				"number": "...",
+				"href": ""
+			},
+			{
+				"number": "11",
+				"href": ""
+			}
+		],
+		"video": {
+			"title": "Ох, уж этот балет",
+			"link": "Смотреть",
+			"href": ""
+		}
+	},
 	"site": {
 		"fonts": [
 			{
-				"name": ""
+				"name": "playfairdisplay-bold"
+			},
+			{
+				"name": "raleway-light"
+			},
+			{
+				"name": "raleway-regular"
+			},
+			{
+				"name": "raleway-medium"
+			},
+			{
+				"name": "raleway-semibold"
+			},
+			{
+				"name": "raleway-bold"
 			}
 		],
 		"stylesheets": [
 			{
-				"href": "css/swiper.min.css",
-				"name": "Swiper"
+				"name": "swiper"
 			},
 			{
-				"href": "css/style.min.css",
-				"name": "Style"
+				"name": "style"
 			}
 		],
 		"index": {
 			"title": "Главная страница",
 			"href": "index.html"
-		},
-		"catalog": {
-			"title": "Каталог",
-			"href": "catalog.html"
 		}
 	},
 	"media": [
 		{
 			"resolution": "1170",
 			"name": "desktop"
-		},
-		{
-			"resolution": "750",
-			"name": "tablet"
 		}
 	]
 }

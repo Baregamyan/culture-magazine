@@ -1,30 +1,39 @@
 //Шрифты
-$font-family: Roboto, Arial, sans-serif;
-$line-height: 1.3;
+$font-family: "Raleway", Arial, sans-serif;
+$font-family-bold: "Playfair Display", Arial Black, serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
 $line-height-xs: 10px;
 $line-height-sm: 16px;
 $line-height-md: 22px;
 $line-height-lg: 24px;
 $line-height-xl: 30px;
 $letter-spacing: 0;
-$font-xs: 14px;
-$font-sm: 16px;
-$font-md: 18px;
-$font-lg: 24px;
-$font-xl: 36px;
-$font-xxl: 45px;
-$font-xxxl: 55px;
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-lg2: 17px;
+$font-xl: 18px;
+$font-xxl: 20px;
+$font-xxxl: 23px;
+$font-super-large: 25px;
+$font-mega-large: 30px;
+$font-size: $font-md;
+$font-weight: $font-weight-regular;
 
 //Цвета
-$color-base: #283136;
-$color-bold: #000000;
+$color-base: #000000;
 $color-bg: #ffffff;
-$color-bg-secondary: #eeeeee;
-$color-primary: #fb565a;
-$color-secondary: #00ca74;
-$color-tertiary: #efc84a;
-$color-active-control: #c1c1c1;
-$color-link: $color-primary;
+$color-primary: #ff7931;
+$color-secondary: #48494d;
+$color-menu-arrow: rgba(72, 73, 77, 0.5);
+$color-menu-close: #d7d9df;
+$color-tertiary: #f9f9fc;
 $color-hover: darken($color-primary, 15%);
 $color-active: lighten($color-primary, 15%);
 
@@ -33,14 +42,14 @@ $width-xs: 320px;
 $width-sm: 576px;
 $width-md: 768px;
 $width-lg: 992px;
-$width-xl: 1440px;
+$width-xl: 1170px;
 
 //Медиа
-$media-sm: screen and (max-width: $width-sm);
-$media-md: screen and (max-width: $width-md);
-$media-lg: screen and (max-width: $width-lg);
-$media-xl: screen and (max-width: $width-xl);
+$media-sm: screen and (min-width: $width-sm);
+$media-md: screen and (min-width: $width-md);
+$media-lg: screen and (min-width: $width-lg);
+$media-xl: screen and (min-width: $width-xl);
 
 //Отступы
-$gap: 140px;
-$gapSm: 20px;
+$gap: 135px;
+$gapSm: 16px;

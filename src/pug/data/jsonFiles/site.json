@@ -2,35 +2,36 @@
   "site": {
     "fonts": [
       {
-        "name": ""
+        "name": "playfairdisplay-bold"
+      }, {
+        "name": "raleway-light"
+      }, {
+        "name": "raleway-regular"
+      }, {
+        "name": "raleway-medium"
+      }, {
+        "name": "raleway-semibold"
+      }, {
+        "name": "raleway-bold"
       }
     ],
     "stylesheets": [
       {
-        "href": "css/swiper.min.css",
-        "name": "Swiper"
+        "name": "swiper"
       },
       {
-        "href": "css/style.min.css",
-        "name": "Style"
+        "name": "style"
       }
     ],
     "index": {
       "title": "Главная страница",
       "href": "index.html"
-    },
-    "catalog": {
-      "title": "Каталог",
-      "href": "catalog.html"
     }
   },
   "media": [
     {
       "resolution": "1170",
       "name": "desktop"
-    }, {
-      "resolution": "750",
-      "name": "tablet"
     }
   ]
 }

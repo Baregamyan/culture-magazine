@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+  padding-left: 0;
+
+  list-style: none;
+  font-size: $font-lg;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  & li {
+    width: 100%;
+    margin-bottom: 20px;
+
+    background-color: $color-tertiary;
+  }
+}
+
+.menu__item {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  margin-left: 0;
+  padding-top: 18px;
+  padding-right: 185px;
+  padding-bottom: 18px;
+  padding-left: $gapSm;
+
+  color: $color-secondary;
+  text-decoration: none;
+
+  background-color: $color-tertiary;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 41%;
+    right: 25px;
+
+    display: inline-block;
+    padding: 3px;
+
+    border: solid $color-menu-arrow;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-45deg);
+  }
+}

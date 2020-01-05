@@ -2,8 +2,7 @@ body {
   min-width: $width-xs;
   margin: 0;
 
-  font-size: $font-xs;
-  line-height: $line-height;
+  font-size: $font-size;
   font-family: $font-family;
   text-align: left;
   color: $color-base;
@@ -52,8 +51,6 @@ ul ol {
 }
 
 a {
-  color: $color-link;
-
   background-color: transparent;
   &:hover,
   &:focus {
@@ -241,13 +238,12 @@ template {
   top: 20px;
   right: 20px;
 
-  width: 21px;
-  height: 21px;
+  width: 30px;
+  height: 30px;
 
   background: transparent;
   border: none;
   cursor: pointer;
-  opacity: 0.5;
   &::before,
   &::after {
     content: " ";
@@ -256,9 +252,9 @@ template {
     left: 15px;
 
     width: 2px;
-    height: 21px;
+    height: 30px;
 
-    background-color: $color-primary;
+    background-color: $color-menu-close;
   }
   &::before {
     transform: rotate(45deg);
@@ -268,7 +264,7 @@ template {
   }
   &:hover,
   &:focus {
-    opacity: 1;
+    background-color: $color-primary;
   }
 }
 
@@ -288,4 +284,19 @@ template {
   &--show {
     display: block;
   }
+}
+
+.bookmark {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+
+  width: 14px;
+  height: 18px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../images/bookmark.svg");
+  background-repeat: no-repeat;
+  border: none;
 }

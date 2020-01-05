@@ -1,7 +1,7 @@
 /**
  * Инициализация слайдера в шапке
  */
-const slider = new Swiper('.main-slider', {
+const slider = new Swiper('.recently', {
   loop: true,
   spaceBetween: 150,
   // autoplay: {
@@ -9,9 +9,9 @@ const slider = new Swiper('.main-slider', {
   // },
   pagination: {
     el: '.slider__controls',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="slider__control ' + className + '"></span>';
-    }
+    clickable: true
+    // renderBullet: function (index, className) {
+    //   return '<span class="slider__control ' + className + '"></span>';
+    // }
   }
 });

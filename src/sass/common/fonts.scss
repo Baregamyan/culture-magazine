@@ -1,26 +1,53 @@
 @font-face {
-  font-weight: 500;
-  font-family: "ʕ•́ᴥ•̀ʔっ";
+  font-weight: 800;
+  font-family: "Playfair Display";
 
   font-display: swap;
-  src: url("../fonts/ʕ•́ᴥ•̀ʔっ.woff2") format("woff2"),
-  url("../fonts/ʕ•́ᴥ•̀ʔっ.woff") format("woff");
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+  url("../fonts/playfairdisplay-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway-light.woff2") format("woff2"),
+  url("../fonts/raleway-light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway-regular.woff2") format("woff2"),
+  url("../fonts/raleway-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway-medium.woff2") format("woff2"),
+  url("../fonts/raleway-medium.woff") format("woff");
 }
 
 @font-face {
   font-weight: 600;
-  font-family: "ʕ•́ᴥ•̀ʔっ";
+  font-family: "Raleway";
 
   font-display: swap;
-  src: url("../fonts/ʕ•́ᴥ•̀ʔっ.woff2") format("woff2"),
-  url("../fonts/ʕ•́ᴥ•̀ʔっ.woff") format("woff");
+  src: url("../fonts/raleway-semibold.woff2") format("woff2"),
+  url("../fonts/raleway-semibold.woff") format("woff");
 }
 
 @font-face {
   font-weight: 700;
-  font-family: "ʕ•́ᴥ•̀ʔっ";
+  font-family: "Raleway";
 
   font-display: swap;
-  src: url("../fonts/ʕ•́ᴥ•̀ʔっ.woff2") format("woff2"),
-  url("../fonts/ʕ•́ᴥ•̀ʔっ.woff") format("woff");
+  src: url("../fonts/raleway-bold.woff2") format("woff2"),
+  url("../fonts/raleway-bold.woff") format("woff");
 }

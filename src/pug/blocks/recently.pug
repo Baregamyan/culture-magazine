@@ -1,0 +1,9 @@
+section.recently.swiper-container
+  .swiper-wrapper
+    each slide in recently
+      .recently__wrapper.swiper-slide(class=`recently__wrapper--${slide.modifier}`)
+        .overlay.recently__overlay
+        img.recently__picture(src=slide.picture.src alt=slide.picture.alt)
+        span.recently__mark(class=slide.mark? null:"new__mark--hide") Новое
+        h2.recently__title #{slide.title}
+        p.recently__text #{slide.text}

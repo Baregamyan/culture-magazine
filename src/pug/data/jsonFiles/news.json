@@ -1,0 +1,35 @@
+{
+  "news": {
+    "title": "Новости",
+    "articles": [
+      {
+        "picture": {
+          "src": "images/musicAward.png",
+          "alt": "Премия Russian World Music Awards"
+        },
+        "href": "",
+        "main": true,
+        "title": "Новости культуры России и всего мира",
+        "description": "В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards"
+      }, {
+        "picture": {
+          "src": "images/leonov.png",
+          "alt": "Памятник Евгению Леонову"
+        },
+        "href": "",
+        "main": false,
+        "title": "Открытие нового памятника Евгению Леонову",
+        "description": "10 сентября в 15:00 был открыт памятник писателю"
+      }, {
+        "picture": {
+          "src": "images/patrick.png",
+          "alt": "Святой Патрик"
+        },
+        "href": "",
+        "main": false,
+        "title": "День и ночь св. Патрика: встреча старых друзей",
+        "description": "Не Джойсом единым живет Ирландия!"
+      }
+    ]
+  }
+}

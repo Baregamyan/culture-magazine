@@ -1,14 +1,20 @@
 @mixin container {
   display: flex;
   box-sizing: border-box;
-  max-width: $width-xl;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gap;
-  padding-left: $gap;
-  @media #{$media-lg} {
-    flex-direction: column;
-    padding-right: $gapSm;
-    padding-left: $gapSm;
+  padding-right: $gapSm;
+  padding-left: $gapSm;
+  @media #{$media-md} {
+    max-width: $width-xl;
+    padding-right: $gap;
+    padding-left: $gap;
   }
+}
+
+@mixin title-block {
+  font-weight: $font-weight-semibold;
+  font-size: $font-lg2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
