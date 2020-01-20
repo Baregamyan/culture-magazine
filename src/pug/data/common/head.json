@@ -1,5 +1,5 @@
 {
-  "site": {
+  "head": {
     "fonts": [
       {
         "name": "playfairdisplay-bold"
@@ -22,16 +22,6 @@
       {
         "name": "style"
       }
-    ],
-    "index": {
-      "title": "Главная страница",
-      "href": "index.html"
-    }
-  },
-  "media": [
-    {
-      "resolution": "1170",
-      "name": "desktop"
-    }
-  ]
+    ]
+  }
 }

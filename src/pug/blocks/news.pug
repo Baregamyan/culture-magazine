@@ -1,13 +1,17 @@
 section.news
   h2.news__title #{news.title}
-  each article in news.articles
-    article.news__article(class=article.main? "news__article--main":nul)
-      a.news__article-wrapper(class=article.main? "news__article-wrapper--main":null href=article.href)
-        .news__article-picture-wrapper
-          img.news__article-picture(src=article.picture.src)
-          button.bookmark(type="button" title="Добавить в закладки")
-          .overlay
-        .news__article-text
-          h3.news__article-title #{article.title}
-          p.news__article-description #{article.description}
+  .news__wrapper
+    each article in news.articles
+      article.news__article(class=article.main? "news__article--main":nul)
+        a.news__article-wrapper(class=article.main? "news__article-wrapper--main":null href=article.href)
+          if article.main
+            .overlay.overlay--cover
+          .news__article-picture-wrapper
+            +picture("news__article-picture", article.picture.alt, true, false, article.picture.name, "jpg", auto, auto)
+            //- img.news__article-picture(src=article.picture.src)
+            button.bookmark(type="button" title="Добавить в закладки")
+            .overlay.overlay--cover
+          .news__article-text
+            h3.news__article-title #{article.title}
+            p.news__article-description #{article.description}
 

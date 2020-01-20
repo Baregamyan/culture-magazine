@@ -1,12 +1,13 @@
 {
-  "recently": [
+  "recently": {
+    "slides": [
       {
         "mark": true,
         "modifier": "underwater-hotel",
         "title": "Подводный отель",
         "text": "Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти",
         "picture": {
-          "src": "images/underwaterHotel.jpg",
+          "name": "underwaterHotel",
           "alt": "Отель в Думай под водой"
         }
       }, {
@@ -19,5 +20,15 @@
           "alt": ""
         }
       }
+    ],
+    "controls": [
+      {
+        "text": "Предыдущая",
+        "modify": "--prev"
+      }, {
+        "text": "Следующая",
+        "modify": "--next"
+      }
     ]
   }
+}

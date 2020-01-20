@@ -1,5 +1,5 @@
 .menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 76px;
   padding-left: 0;
@@ -13,6 +13,29 @@
     margin-bottom: 20px;
 
     background-color: $color-tertiary;
+    @media #{$media-md} {
+      width: auto;
+      margin-bottom: 0;
+
+      background-color: transparent;
+      &:last-of-type a {
+        margin-right: 0;
+      }
+    }
+  }
+  &--show {
+    display: flex;
+  }
+  &--no-js {
+    display: flex;
+  }
+  @media #{$media-md} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+    margin-top: 0;
   }
 }
 
@@ -31,6 +54,8 @@
   text-decoration: none;
 
   background-color: $color-tertiary;
+
+  transition: 0.1s;
   &::after {
     content: "";
     position: absolute;
@@ -43,5 +68,17 @@
     border: solid $color-menu-arrow;
     border-width: 0 3px 3px 0;
     transform: rotate(-45deg);
+  }
+  &:hover {
+    color: $color-primary;
+  }
+  @media #{$media-md} {
+    margin-right: 49px;
+    padding: 10px 0;
+
+    background-color: transparent;
+    &::after {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,60 @@
+.videos {
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @include container;
+
+}
+
+.video {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.video__picture {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.video__title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+
+  text-align: center;
+
+  font-weight: $font-weight-semibold;
+  color: $color-bg;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.videos__pagination {
+  display: flex;
+  justify-content: center;
+  max-width: 111px;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  & span {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+
+    background-color: $color-base;
+    opacity: 0.3;
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

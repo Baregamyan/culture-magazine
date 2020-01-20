@@ -49,7 +49,8 @@
 			{
 				"picture": {
 					"src": "images/musicAward.png",
-					"alt": "Премия Russian World Music Awards"
+					"alt": "Премия Russian World Music Awards",
+					"name": "musicAward"
 				},
 				"href": "",
 				"main": true,
@@ -59,7 +60,8 @@
 			{
 				"picture": {
 					"src": "images/leonov.png",
-					"alt": "Памятник Евгению Леонову"
+					"alt": "Памятник Евгению Леонову",
+					"name": "leonov"
 				},
 				"href": "",
 				"main": false,
@@ -68,8 +70,20 @@
 			},
 			{
 				"picture": {
+					"src": "images/writers.png",
+					"alt": "Беседы с писателями",
+					"name": "writers"
+				},
+				"href": "",
+				"main": false,
+				"title": "Беседы с писателями",
+				"description": "Русские писатели беседуют о важности искусства."
+			},
+			{
+				"picture": {
 					"src": "images/patrick.png",
-					"alt": "Святой Патрик"
+					"alt": "Святой Патрик",
+					"name": "patrick"
 				},
 				"href": "",
 				"main": false,
@@ -79,35 +93,48 @@
 		]
 	},
 	"popup": {},
-	"recently": [
-		{
-			"mark": true,
-			"modifier": "underwater-hotel",
-			"title": "Подводный отель",
-			"text": "Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти",
-			"picture": {
-				"src": "images/underwaterHotel.jpg",
-				"alt": "Отель в Думай под водой"
+	"recently": {
+		"slides": [
+			{
+				"mark": true,
+				"modifier": "underwater-hotel",
+				"title": "Подводный отель",
+				"text": "Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти",
+				"picture": {
+					"name": "underwaterHotel",
+					"alt": "Отель в Думай под водой"
+				}
+			},
+			{
+				"mark": false,
+				"modifier": "something",
+				"title": "Something",
+				"text": "hm...",
+				"picture": {
+					"src": "",
+					"alt": ""
+				}
 			}
-		},
-		{
-			"mark": false,
-			"modifier": "something",
-			"title": "Something",
-			"text": "hm...",
-			"picture": {
-				"src": "",
-				"alt": ""
+		],
+		"controls": [
+			{
+				"text": "Предыдущая",
+				"modify": "--prev"
+			},
+			{
+				"text": "Следующая",
+				"modify": "--next"
 			}
-		}
-	],
+		]
+	},
 	"reviews": {
 		"title": "Обзоры",
 		"articles": [
 			{
 				"picture": {
-					"src": "",
-					"alt": "Выставка «Шальные годы Монпарнаса»"
+					"src": "images/monparnas.jpg",
+					"alt": "Выставка «Шальные годы Монпарнаса»",
+					"name": "monparnas"
 				},
 				"href": "",
 				"title": "«Шальные годы» Монпарнаса",
@@ -115,8 +142,9 @@
 			},
 			{
 				"picture": {
-					"src": "",
-					"alt": "Анатомия за 30 секунд"
+					"src": "images/anatomy.jpg",
+					"alt": "Анатомия за 30 секунд",
+					"name": "anatomy"
 				},
 				"href": "",
 				"title": "Анатомия за 30 секунд",
@@ -124,8 +152,9 @@
 			},
 			{
 				"picture": {
-					"src": "",
-					"alt": "Русские балетные сезоны »"
+					"src": "images/ballet.jpg",
+					"alt": "Русские балетные сезоны »",
+					"name": "ballet"
 				},
 				"href": "",
 				"title": "Русские балетные сезоны",
@@ -133,8 +162,9 @@
 			},
 			{
 				"picture": {
-					"src": "",
-					"alt": "Премьера спектакля «Чудаки и зануды»"
+					"src": "images/chudaki.jpg",
+					"alt": "Премьера спектакля «Чудаки и зануды»",
+					"name": "chudaki"
 				},
 				"href": "",
 				"title": "Сферические чудаки",
@@ -170,7 +200,111 @@
 			"href": ""
 		}
 	},
+	"videoBanner": {
+		"src": "images/ballet-video.jpg",
+		"alt": "Видео про балет",
+		"title": "Ох, уж этот балет",
+		"button": "Смотреть",
+		"href": "#",
+		"name": "ballet-video"
+	},
+	"videos": [
+		{
+			"src": "/images/face-first.jpg",
+			"title": "Как все успевать",
+			"href": "",
+			"name": "face-first",
+			"alt": "Видео 'Как всё успевать'"
+		},
+		{
+			"src": "/images/red-stone.jpg",
+			"title": "Красный камень",
+			"href": "",
+			"name": "red-stone",
+			"alt": "Видео 'Красный камень'"
+		},
+		{
+			"src": "/images/art.jpg",
+			"title": "Арт искусство",
+			"href": "",
+			"name": "art",
+			"alt": "Видео 'Арт искусство'"
+		},
+		{
+			"src": "/images/war-and-victory.jpg",
+			"title": "Видео 'Война и победа'",
+			"href": "",
+			"name": "war-and-victory",
+			"alt": "Война и победа"
+		}
+	],
+	"videosAside": [
+		{
+			"title": "Воздушные шары",
+			"href": "",
+			"src": "/images/balloons.jpg",
+			"alt": "Видео про воздушные шары"
+		},
+		{
+			"title": "Необычная фотосессия",
+			"href": "",
+			"src": "/images/photosession.jpg",
+			"alt": "Видео о необычной фотосессии"
+		},
+		{
+			"title": "Выставка птиц",
+			"href": "",
+			"src": "/images/birds-expo.jpg",
+			"alt": "Видео про воздушные шары"
+		}
+	],
+	"fonts": [
+		{
+			"name": "playfairdisplay-bold"
+		},
+		{
+			"name": "raleway-light"
+		},
+		{
+			"name": "raleway-regular"
+		},
+		{
+			"name": "raleway-medium"
+		},
+		{
+			"name": "raleway-semibold"
+		},
+		{
+			"name": "raleway-bold"
+		}
+	],
+	"stylesheets": [
+		{
+			"name": "swiper"
+		},
+		{
+			"name": "style"
+		}
+	],
 	"site": {
+		"index": {
+			"title": "Главная страница",
+			"href": "index.html"
+		},
+		"media": [
+			{
+				"resolution": "768",
+				"name": "desktop"
+			}
+		],
+		"dirs": {
+			"images": "images/",
+			"fonts": "fonts/",
+			"stylesheets": "css/",
+			"js": "js/"
+		}
+	},
+	"head": {
 		"fonts": [
 			{
 				"name": "playfairdisplay-bold"
@@ -198,16 +332,6 @@
 			{
 				"name": "style"
 			}
-		],
-		"index": {
-			"title": "Главная страница",
-			"href": "index.html"
-		}
-	},
-	"media": [
-		{
-			"resolution": "1170",
-			"name": "desktop"
-		}
-	]
+		]
+	}
 }

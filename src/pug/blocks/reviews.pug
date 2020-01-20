@@ -1,22 +1,23 @@
 section.reviews
-  h2.title-block #{reviews.title}
-  each article in reviews.articles
-    article.reviews__review
-      a(href=article.href)
-        img.reviews__review-picture(src=article.picture.src)
-        h3.reviews__review-title #{article.title}
-        p.reviews__review-description #{article.description}
-      .overlay
-      button.bookmark(type="button" title="Добавить в закладки")
-  .reviews__pagination-wrapper
-    button.reviews__pagination-button.reviews__pagination-button--back(button="button" title="Переход к предыдущим статьям")
-    .reviews__pagination-numbers
-      each pagination in reviews.pagination
-        a.reviews__pagination-number(class=pagination.active? "reviews__pagination-number--active":null href="") #{pagination.number}
-    button.reviews__pagination-button.reviews__pagination-button--next(button="button" title="Переход к следующим статьям")
-  .reviews__video
-    h3.reviews__video-title #{reviews.video.title}
-    a.button.reviews__video-link(href=reviews.video.href) #{reviews.video.link}
+  h2.reviews__title #{reviews.title}
+  .reviews__wrapper
+    each article in reviews.articles
+      article.reviews__review
+        a.reviews__review-wrapper(href=article.href)
+          .reviews__review-picture-wrapper
+            +picture("reviews__review-picture", article.picture.alt, true, false, article.picture.name, "jpg", auto, auto)
+            //- img.reviews__review-picture(src=article.picture.src)
+            .overlay.overlay--cover
+            button.bookmark(type="button" title="Добавить в закладки")
+          h3.reviews__review-title #{article.title}
+          p.reviews__review-description #{article.description}
+  .reviews__pagination
+    .reviews__pagination-wrapper
+      button.reviews__pagination-button.reviews__pagination-button--back(button="button" title="Переход к предыдущим статьям")
+      .reviews__pagination-numbers
+        each pagination in reviews.pagination
+          a.reviews__pagination-number(class=pagination.active? "reviews__pagination-number--active":null href="") #{pagination.number}
+      button.reviews__pagination-button.reviews__pagination-button--next(button="button" title="Переход к следующим статьям")
 
 
 

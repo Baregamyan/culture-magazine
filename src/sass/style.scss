@@ -1,12 +1,19 @@
+@import "common/mixin.scss";
+@import "common/reset.scss";
 @import "common/fonts.scss";
 @import "common/vars.scss";
 @import "common/base.scss";
-@import "common/mixin.scss";
 
+@import "blocks/button.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/menu.scss";
 @import "blocks/recently.scss";
+@import "blocks/main-content.scss";
 @import "blocks/news.scss";
+@import "blocks/reviews.scss";
+@import "blocks/video-banner.scss";
+@import "blocks/videos.scss";
+@import "blocks/videos-aside.scss";
 @import "blocks/socials.scss";
 @import "blocks/footer.scss";

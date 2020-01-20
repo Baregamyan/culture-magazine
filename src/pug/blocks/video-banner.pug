@@ -1,0 +1,8 @@
+section.video-banner
+  .video-banner__video
+    .video-banner__picture-wrapper
+      +picture("video-banner__picture", videoBanner.alt, true, true, videoBanner.name, "jpg", auto, auto)
+      //- img.video-banner__picture(src=videoBanner.src alt=videoBanner.alt)
+    .video-banner__text
+      h2.video-banner__title #{videoBanner.title}
+      a.button.button--video-arrow(href=videoBanner.href) #{videoBanner.button}

@@ -15,6 +15,7 @@ $line-height-xl: 30px;
 $letter-spacing: 0;
 $font-xs: 10px;
 $font-sm: 12px;
+$font-sm2: 13px;
 $font-md: 14px;
 $font-lg: 16px;
 $font-lg2: 17px;
@@ -23,6 +24,7 @@ $font-xxl: 20px;
 $font-xxxl: 23px;
 $font-super-large: 25px;
 $font-mega-large: 30px;
+$font-huge: 72px;
 $font-size: $font-md;
 $font-weight: $font-weight-regular;
 
@@ -36,6 +38,8 @@ $color-menu-close: #d7d9df;
 $color-tertiary: #f9f9fc;
 $color-hover: darken($color-primary, 15%);
 $color-active: lighten($color-primary, 15%);
+$color-button-bg: rgba(0, 0, 0, 0.7);
+$color-pagination-arrow: #b7b7b7;
 
 //Размеры
 $width-xs: 320px;

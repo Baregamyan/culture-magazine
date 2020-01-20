@@ -1,0 +1,20 @@
+{
+  "videosAside": [
+    {
+      "title": "Воздушные шары",
+      "href": "",
+      "src": "/images/balloons.jpg",
+      "alt": "Видео про воздушные шары"
+    }, {
+      "title": "Необычная фотосессия",
+      "href": "",
+      "src": "/images/photosession.jpg",
+      "alt": "Видео о необычной фотосессии"
+    }, {
+      "title": "Выставка птиц",
+      "href": "",
+      "src": "/images/birds-expo.jpg",
+      "alt": "Видео про воздушные шары"
+    }
+  ]
+}

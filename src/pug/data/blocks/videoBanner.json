@@ -1,0 +1,9 @@
+{
+  "videoBanner": {
+    "name": "ballet-video",
+    "alt": "Видео про балет",
+    "title": "Ох, уж этот балет",
+    "button": "Смотреть",
+    "href": "#"
+  }
+}

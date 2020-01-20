@@ -1,7 +1,7 @@
 import {src, dest, watch, parallel, series} from 'gulp';
 import del from 'del';
 import sass from 'gulp-sass';
-import csscomb from 'gulp-csscomb';
+import cssSort from 'gulp-csscomb';
 import csso from 'gulp-csso';
 import jsonMerge from 'gulp-merge-json';
 import pug from 'gulp-pug';
@@ -34,7 +34,7 @@ const path = {
   styles: {
     root: `${dirs.src}/sass`,
     compile: `${dirs.src}/sass/style.scss`,
-    save: `${dirs.dest}/css/`
+    save: `${dirs.dest}/css`
   },
   views: {
     root: `${dirs.src}/pug`,
@@ -42,12 +42,12 @@ const path = {
     save: `${dirs.dest}`
   },
   json: {
-    root: `${dirs.src}/pug/data/jsonFiles`,
-    save: `${dirs.src}/pug/data/`
+    root: `${dirs.src}/pug/data/**/*.json`,
+    save: `${dirs.src}/pug/data`
   },
   scripts: {
     root: `${dirs.src}/js/modules`,
-    save: `${dirs.dest}/js/`
+    save: `${dirs.dest}/js`
   },
   images: {
     root: `${dirs.src}/images`,
@@ -63,6 +63,7 @@ const path = {
  */
 export const styles = () => src(path.styles.compile)
   .pipe(sass.sync().on('error', sass.logError))
+  .pipe(cssSort())
   .pipe(dest(path.styles.save))
   .pipe(autoprefixer())
   .pipe(csso())
@@ -71,11 +72,7 @@ export const styles = () => src(path.styles.compile)
   }))
   .pipe(dest(path.styles.save));
 
-export const csscorr = () => src(`${path.styles.root}/**/*.scss`)
-  .pipe(csscomb())
-  .pipe(dest(path.styles.root));
-
-  export const json = () => src(`${path.json.root}/*.json`)
+export const json = () => src(path.json.root)
   .pipe(jsonMerge({
     fileName: 'data.json'
   }))
@@ -90,7 +87,7 @@ export const views = () => src(`${path.views.compile}/*.pug`)
   .pipe(pug({
     pretty: true
   }))
-  .pipe(dest(path.views.save));
+  .pipe(dest(`${path.views.save}/`));
 
 export const scripts = () => src(`${path.scripts.root}/*.js`)
   .pipe(concat('script.js'))
@@ -140,9 +137,9 @@ export const sprite = () => {
     .pipe(dest(`${path.views.root}/common/`))
 };
 
-const copy = () => {
-  return src(`${dirs.src}/**/*.{woff,woff2}`)
-    .pipe(dest(`${dirs.dest}`))
+const fonts = () => {
+  return src(`${dirs.src}/fonts/*.{woff,woff2}`)
+    .pipe(dest(`${dirs.dest}/fonts/`))
 };
 
 /**
@@ -162,11 +159,11 @@ const swiperJS = () => {
  * Задачи для разработки
  */
 // export const dev = series(clean, parallel(buildStyles, buildViews, buildScripts), devWatch);
-export const dev = series(json, csscorr, parallel(swiperCSS, swiperJS), parallel(styles, views, scripts, sprite, images), devWatch);
+export const dev = series(json, parallel(styles, views, scripts, sprite, images), devWatch);
 
 /**
  * Для билда
  */
-export const build = series(clean, copy, json, csscorr, parallel(copy, styles, views, images, scripts));
+export const build = series(clean, fonts, json, parallel(swiperCSS, swiperJS), parallel(styles, views, images, scripts));
 
 export default dev;

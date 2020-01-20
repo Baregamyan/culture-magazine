@@ -1,0 +1,20 @@
+{
+  "site": {
+    "index": {
+      "title": "Главная страница",
+      "href": "index.html"
+    },
+    "media": [
+      {
+        "resolution": "768",
+        "name": "desktop"
+      }
+    ],
+    "dirs": {
+      "images": "images/",
+      "fonts": "fonts/",
+      "stylesheets": "css/",
+      "js": "js/"
+    }
+  }
+}

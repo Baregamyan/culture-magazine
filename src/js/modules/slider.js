@@ -1,17 +1,28 @@
 /**
  * Инициализация слайдера в шапке
  */
-const slider = new Swiper('.recently', {
+let slider = new Swiper('.recently', {
   loop: true,
   spaceBetween: 150,
-  // autoplay: {
-  //   delay: 4000,
-  // },
   pagination: {
-    el: '.slider__controls',
+    el: '.recently__pagination',
     clickable: true
-    // renderBullet: function (index, className) {
-    //   return '<span class="slider__control ' + className + '"></span>';
-    // }
+  },
+  navigation: {
+    nextEl: '.recently__control--next',
+    prevEl: '.recently__control--prev',
   }
 });
+
+/**
+ * Инициализация слайдера в блоке с видео
+ */
+let sliderVideo = new Swiper('.videos', {
+  loop: true,
+  spaceBetween: 150,
+  pagination: {
+    el: '.videos__pagination',
+    type: 'bullets',
+    clickable: true
+  }
+})

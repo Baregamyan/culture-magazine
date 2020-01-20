@@ -6,7 +6,12 @@ block vars
   -var currentPageHref = site.index.href
 
 block mainContent
-  .overlay
   include ../blocks/recently.pug
-  include ../blocks/news.pug
-  include ../blocks/reviews.pug
+  .main-content
+    aside.main-content__left-aside
+      include ../blocks/news.pug
+      include ../blocks/reviews.pug
+      include ../blocks/video-banner.pug
+      include ../blocks/videos.pug
+    aside.main-content__right-aside
+      include ../blocks/videos-aside.pug

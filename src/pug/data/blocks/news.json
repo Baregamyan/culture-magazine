@@ -4,7 +4,7 @@
     "articles": [
       {
         "picture": {
-          "src": "images/musicAward.png",
+          "name": "musicAward",
           "alt": "Премия Russian World Music Awards"
         },
         "href": "",
@@ -13,7 +13,7 @@
         "description": "В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards"
       }, {
         "picture": {
-          "src": "images/leonov.png",
+          "name": "leonov",
           "alt": "Памятник Евгению Леонову"
         },
         "href": "",
@@ -22,7 +22,16 @@
         "description": "10 сентября в 15:00 был открыт памятник писателю"
       }, {
         "picture": {
-          "src": "images/patrick.png",
+          "name": "writers",
+          "alt": "Беседы с писателями"
+        },
+        "href": "",
+        "main": false,
+        "title": "Беседы с писателями",
+        "description": "Русские писатели беседуют о важности искусства."
+      }, {
+        "picture": {
+          "name": "patrick",
           "alt": "Святой Патрик"
         },
         "href": "",

@@ -1,0 +1,6 @@
+section.videos-aside
+  each video in videosAside
+    .videos-aside__video
+      img.videos-aside__picture(src=video.src alt=video.alt)
+      h2.videos-aside__title #{video.title}
+      a.button.button--video-arrow(href=video.href) Смотреть
