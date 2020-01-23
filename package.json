@@ -1,7 +1,7 @@
 {
-  "name": "Gulp шаблон",
+  "name": "culture-magazine",
   "version": "1.0.0",
-  "description": "Gulp шаблон для вестки",
+  "description": "Сайт для интернет издания 'Новости культуры'",
   "main": "",
   "dependencies": {},
   "devDependencies": {
@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/jokerinteractive/gulp-sass.git"
   },
-  "author": "Joker Interactive",
+  "author": "Arsen Baregamyan",
   "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/jokerinteractive/gulp-sass/issues"
