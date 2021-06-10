@@ -7,13 +7,12 @@
 
 .recently__wrapper {
   position: relative;
-
   box-sizing: border-box;
   padding-top: 24%;
   padding-bottom: 18%;
+  color: $color-bg;
 
   text-align: center;
-  color: $color-bg;
   @media #{$media-md} {
     padding-top: 130px;
     padding-bottom: 0;
@@ -25,7 +24,6 @@
   top: 0;
   left: 0;
   z-index: -2;
-
   width: 100%;
   @media #{$media-md} {
     height: 100%;
@@ -39,13 +37,10 @@
   position: absolute;
   top: 25px;
   left: 50%;
-
   padding: 5px 15px;
-
   font-size: $font-lg;
-  text-transform: uppercase;
   letter-spacing: 2px;
-
+  text-transform: uppercase;
   background-color: $color-primary;
   transform: translateX(-50%);
   @media #{$media-md} {
@@ -57,13 +52,13 @@
   margin-bottom: 6%;
   padding-right: 20%;
   padding-left: 20%;
+  color: $color-bg;
 
   font-weight: $font-weight-light;
   font-size: $font-mega-large;
   line-height: 45px;
-  color: $color-bg;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
   @media #{$media-md} {
     padding: 0;
     font-size: $font-huge;
@@ -84,17 +79,15 @@
     padding-right: 10px;
     padding-left: 10px;
     &::after {
-      content: "";
       position: absolute;
       top: 50%;
       left: 50%;
-
       width: 2px;
       height: 42px;
-
       background-color: $color-bg;
       background-repeat: no-repeat;
       transform: translate(-50%, -50%);
+      content: "";
     }
   }
   @media #{media-lg} {
@@ -107,17 +100,14 @@
   position: relative;
   width: 371px;
 
-
   padding: 0;
+  color: $color-bg;
 
   font-weight: $font-weight-regular;
   font-size: $font-sm2;
-  color: $color-bg;
-
   background-color: transparent;
   border: none;
   cursor: pointer;
-
   transition: 0.1s;
   @media #{$media-lg} {
 
@@ -127,37 +117,31 @@
   &--prev {
     text-align: left;
     &::after {
-      content: "";
       position: absolute;
       top: 50%;
       left: 121px;
-
       width: 64px;
       height: 2px;
-
       background-color: $color-bg;
       background-repeat: no-repeat;
       transform: translateX(-50%);
-
       transition: 0.2s;
+      content: "";
     }
   }
   &--next {
     text-align: right;
     &::after {
-      content: "";
       position: absolute;
       top: 50%;
       right: 52px;
-
       width: 64px;
       height: 2px;
-
       background-color: $color-bg;
       background-repeat: no-repeat;
       transform: translateX(-50%);
-
       transition: 0.2s;
+      content: "";
     }
   }
   &:hover {
@@ -171,7 +155,6 @@
 
 .recently__control-arrow {
   position: absolute;
-
   width: 10px;
   height: 20px;
   background-image: url("/images/arrow-slider-left.png");
@@ -191,15 +174,14 @@
 .recently__text {
   padding-right: 10%;
   padding-left: 10%;
-
   line-height: 21px;
   @media #{$media-md} {
+    max-width: 456px;
     margin-right: auto;
     margin-bottom: 48px;
     margin-left: auto;
     padding: 0;
     text-align: center;
-    max-width: 456px;
   }
 }
 
@@ -208,9 +190,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-
   display: block;
-
   cursor: none;
 }
 
@@ -218,9 +198,7 @@
   position: absolute;
   bottom: 25px;
   left: 50%;
-
   width: 92px;
-
   transform: translateX(-50%);
   @media #{$media-md} {
     display: none;
@@ -229,7 +207,6 @@
     width: 10px;
     height: 10px;
     margin-right: 15px;
-
     background-color: $color-bg;
     opacity: 0.4;
     &-active {

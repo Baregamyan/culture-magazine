@@ -17,8 +17,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 6px;
     max-width: 769px;
+    margin-bottom: 6px;
   }
 }
 
@@ -29,7 +29,6 @@
 
 .reviews__review {
   position: relative;
-
   margin-bottom: 30px;
   @media #{$media-md} {
     width: 45%;
@@ -37,53 +36,61 @@
   @media #{$media-xl} {
     min-width: 370px;
   }
+  & .bookmark {
+    top: -2px;
+    right: 7px;
+  }
 }
 
 .reviews__review-picture {
   width: 100%;
 
   object-fit: cover;
-}
-
-.reviews__review-wrapper {
-  text-decoration: none;
-  &:hover {
-    & .reviews__review-title {
-      color: $color-primary;
-    }
-    & .reviews__review-picture-wrapper {
-      & .overlay--cover {
-        z-index: 3;
-
-        opacity: 1;
-      }
-      & .bookmark {
-        z-index: 10;
-
-        opacity: 1;
-      }
-    }
+  object-position: center;
+  @media #{$media-md} {
+    min-height: 260px;
   }
 }
 
 .reviews__review-title {
   margin-top: 15px;
   margin-bottom: 10px;
+  color: $color-base;
 
   font-size: $font-xxxl;
   font-family: $font-family-bold;
-  color: $color-base;
-}
-
-.reviews__review-description {
-  margin-bottom: 0;
-
-  line-height: $line-height-md;
-  color: $color-base;
 }
 
 .reviews__review-picture-wrapper {
   position: relative;
+}
+
+.reviews__review-wrapper {
+  display: block;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    & .reviews__review-title {
+      color: $color-primary;
+    }
+    & .reviews__review-picture-wrapper {
+      & .overlay--cover {
+        z-index: 3;
+        opacity: 1;
+      }
+    }
+    & ~ .bookmark {
+      opacity: 1;
+    }
+  }
+}
+
+
+.reviews__review-description {
+  margin-bottom: 0;
+  color: $color-base;
+
+  line-height: $line-height-md;
 }
 
 .reviews__pagination {
@@ -96,8 +103,8 @@
 
 .reviews__pagination-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   @media #{$media-md} {
     max-width: 428px;
@@ -111,30 +118,27 @@
   height: 22px;
   margin-right: 21px;
   padding: 0;
-
   background-color: transparent;
   background-image: url("/images/arrow-left.png");
   background-repeat: no-repeat;
-  border: none;
   background-size: 100%;
-  opacity: 0.3;
+  border: none;
   cursor: pointer;
+  opacity: 0.3;
   &--next {
     margin-right: 0;
     margin-left: 21px;
-
     background-image: url("/images/arrow-right.png");
     @media #{$media-md} {
       &::before {
         position: absolute;
-        content: "";
         top: -5px;
         right: 23px;
         width: 1px;
         height: 27px;
-
         background-color: $color-pagination-arrow;
         background-repeat: no-repeat;
+        content: "";
       }
     }
   }
@@ -142,14 +146,13 @@
     @media #{$media-md} {
       &::after {
         position: absolute;
-        content: "";
         top: -5px;
         right: -23px;
         width: 1px;
         height: 27px;
-
         background-color: $color-pagination-arrow;
         background-repeat: no-repeat;
+        content: "";
       }
     }
   }
@@ -157,7 +160,8 @@
     width: 8px;
     height: 14px;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
     &::after, &::before {
       background-color: $color-primary;
@@ -175,40 +179,37 @@
   width: 39px;
   height: 39px;
   padding-top: 8px;
+  color: $color-base;
 
   font-size: $font-xl;
   text-align: center;
-  color: $color-base;
   text-decoration: none;
   &:hover {
     color: $color-primary;
-
     border: 1px solid $color-primary;
     @media#{$media-md} {
       border: none;
     }
   }
   @media #{$media-md} {
-    margin-right: 21px;
     width: auto;
-
-    font-size: $font-md;
+    margin-right: 21px;
 
     padding-right: 0;
     padding-left: 0;
+    font-size: $font-md;
   }
   &--active {
     color: $color-primary;
-
     border: 1px solid $color-primary;
     @media #{$media-md} {
       padding-top: 5px;
+      color: $color-base;
+      font-size: $font-xxl;
       border-top: none;
       border-right: none;
-      border-left: none;
-      font-size: $font-xxl;
-      color: $color-base;
       border-bottom-width: 2px;
+      border-left: none;
       &:hover {
         color: $color-base;
         border-bottom: 2px solid $color-primary;

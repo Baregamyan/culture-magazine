@@ -20,6 +20,7 @@ function setupMenusToggling() {
     menusOpen.classList.remove('nav__open--show');
     menus.forEach(menu => {
       menu.classList.add('menu--show');
+      menu.firstElementChild.firstElementChild.focus();
     });
     menusClose.classList.remove('nav__close--hide');
   })
@@ -28,6 +29,7 @@ function setupMenusToggling() {
     menusClose.classList.add('nav__close--hide');
     menus.forEach(menu => {
       menu.classList.remove('menu--show');
+      menusOpen.focus();
     });
     menusOpen.classList.add('nav__open--show');
   })

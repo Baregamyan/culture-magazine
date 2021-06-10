@@ -6,18 +6,14 @@ section.reviews
         a.reviews__review-wrapper(href=article.href)
           .reviews__review-picture-wrapper
             +picture("reviews__review-picture", article.picture.alt, true, false, article.picture.name, "jpg", auto, auto)
-            //- img.reviews__review-picture(src=article.picture.src)
             .overlay.overlay--cover
-            button.bookmark(type="button" title="Добавить в закладки")
           h3.reviews__review-title #{article.title}
           p.reviews__review-description #{article.description}
+        button.bookmark(type="button", title="Добавить в закладки")
   .reviews__pagination
     .reviews__pagination-wrapper
-      button.reviews__pagination-button.reviews__pagination-button--back(button="button" title="Переход к предыдущим статьям")
+      button.reviews__pagination-button.reviews__pagination-button--back(type="button", title="Переход к предыдущим статьям")
       .reviews__pagination-numbers
         each pagination in reviews.pagination
-          a.reviews__pagination-number(class=pagination.active? "reviews__pagination-number--active":null href="") #{pagination.number}
-      button.reviews__pagination-button.reviews__pagination-button--next(button="button" title="Переход к следующим статьям")
-
-
-
+          a.reviews__pagination-number(class=pagination.active? "reviews__pagination-number--active":null, href=pagination.href) #{pagination.number}
+      button.reviews__pagination-button.reviews__pagination-button--next(type="button", title="Переход к следующим статьям")

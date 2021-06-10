@@ -15,6 +15,6 @@
 @mixin title-block {
   font-weight: $font-weight-semibold;
   font-size: $font-lg2;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }

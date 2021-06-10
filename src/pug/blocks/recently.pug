@@ -3,12 +3,12 @@ section.recently.swiper-container
     each slide in recently.slides
       .recently__wrapper.swiper-slide(class=`recently__wrapper--${slide.modifier}`)
         .overlay.recently__overlay
-        +picture("recently__picture", slide.picture.alt, true, true, slide.picture.name, "jpg", "auto", "auto")
+        +picture("recently__picture", slide.picture.alt, true, true, slide.picture.name, "jpg",slide.picture.width, slide.picture.height)
         span.recently__mark(class=slide.mark? null:"new__mark--hide") Новое
         h2.recently__title #{slide.title}
         .recently__controls
           each control in recently.controls
-            button.recently__control(class=`recently__control${control.modify}` type="button") #{control.text}
+            button.recently__control(class=`recently__control${control.modify}`, type="button") #{control.text}
               span.recently__control-arrow(class=`recently__control-arrow${control.modify}`)
         p.recently__text #{slide.text}
         .recently__pagination

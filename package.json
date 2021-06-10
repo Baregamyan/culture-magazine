@@ -11,6 +11,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
+    "focus-visible": "^5.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -28,6 +29,13 @@
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
+    "pug-lint": "^2.6.0",
+    "pug-lint-config-clock": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
     "swiper": "^5.1.0"
   },
   "browserslist": [
@@ -35,9 +43,10 @@
     "> 2%"
   ],
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run test && gulp build",
+    "start": "gulp build && gulp devWatch",
+    "watch": "gulp watch",
+    "test": "npx pug-lint src/pug/**/*.pug && stylelint src/sass/**/*.scss"
   },
   "repository": {
     "type": "git",

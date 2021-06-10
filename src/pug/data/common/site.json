@@ -2,7 +2,8 @@
   "site": {
     "index": {
       "title": "Главная страница",
-      "href": "index.html"
+      "href": "index.html",
+      "description": "Сайт «Новости культуры»"
     },
     "media": [
       {

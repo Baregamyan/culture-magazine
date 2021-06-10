@@ -1,9 +1,10 @@
 extends ../common/layout.pug
 
 block vars
-  -var mainPage = true
-  -var currentPageTitle = site.index.title
-  -var currentPageHref = site.index.href
+  - var mainPage = true
+  - var currentPageTitle = site.index.title
+  - var currentPageDescription = site.index.description
+  - var currentPageHref = site.index.href
 
 block mainContent
   include ../blocks/recently.pug

@@ -4,14 +4,13 @@
     @include container;
   }
   @media #{$media-xl} {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .video-banner__video {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,12 +30,12 @@
 .video-banner__title {
   margin-top: 17%;
   margin-bottom: 20px;
+  color: #ffffff;
 
   font-weight: $font-weight-medium;
   font-size: $font-xxl;
-  color: #ffffff;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .video-banner__text {

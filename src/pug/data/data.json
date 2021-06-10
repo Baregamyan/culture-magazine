@@ -4,39 +4,39 @@
 	},
 	"menu": [
 		{
-			"href": "",
+			"href": "#",
 			"name": "Новости"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Обзоры"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Музыка"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Архитектура"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Кино"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Театр"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Литература"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Религия"
 		},
 		{
-			"href": "",
+			"href": "#",
 			"name": "Живопись"
 		}
 	],
@@ -48,44 +48,40 @@
 		"articles": [
 			{
 				"picture": {
-					"src": "images/musicAward.png",
-					"alt": "Премия Russian World Music Awards",
-					"name": "musicAward"
+					"name": "musicAward",
+					"alt": "Премия Russian World Music Awards"
 				},
-				"href": "",
+				"href": "#",
 				"main": true,
 				"title": "Новости культуры России и всего мира",
 				"description": "В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards"
 			},
 			{
 				"picture": {
-					"src": "images/leonov.png",
-					"alt": "Памятник Евгению Леонову",
-					"name": "leonov"
+					"name": "leonov",
+					"alt": "Памятник Евгению Леонову"
 				},
-				"href": "",
+				"href": "#",
 				"main": false,
 				"title": "Открытие нового памятника Евгению Леонову",
 				"description": "10 сентября в 15:00 был открыт памятник писателю"
 			},
 			{
 				"picture": {
-					"src": "images/writers.png",
-					"alt": "Беседы с писателями",
-					"name": "writers"
+					"name": "writers",
+					"alt": "Беседы с писателями"
 				},
-				"href": "",
+				"href": "#",
 				"main": false,
 				"title": "Беседы с писателями",
 				"description": "Русские писатели беседуют о важности искусства."
 			},
 			{
 				"picture": {
-					"src": "images/patrick.png",
-					"alt": "Святой Патрик",
-					"name": "patrick"
+					"name": "patrick",
+					"alt": "Святой Патрик"
 				},
-				"href": "",
+				"href": "#",
 				"main": false,
 				"title": "День и ночь св. Патрика: встреча старых друзей",
 				"description": "Не Джойсом единым живет Ирландия!"
@@ -102,17 +98,9 @@
 				"text": "Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти",
 				"picture": {
 					"name": "underwaterHotel",
-					"alt": "Отель в Думай под водой"
-				}
-			},
-			{
-				"mark": false,
-				"modifier": "something",
-				"title": "Something",
-				"text": "hm...",
-				"picture": {
-					"src": "",
-					"alt": ""
+					"alt": "Отель в Думай под водой",
+					"width": "500",
+					"height": "420"
 				}
 			}
 		],
@@ -132,41 +120,37 @@
 		"articles": [
 			{
 				"picture": {
-					"src": "images/monparnas.jpg",
-					"alt": "Выставка «Шальные годы Монпарнаса»",
-					"name": "monparnas"
+					"name": "monparnas",
+					"alt": "Выставка «Шальные годы Монпарнаса»"
 				},
-				"href": "",
+				"href": "#",
 				"title": "«Шальные годы» Монпарнаса",
 				"description": "В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»"
 			},
 			{
 				"picture": {
-					"src": "images/anatomy.jpg",
-					"alt": "Анатомия за 30 секунд",
-					"name": "anatomy"
+					"name": "anatomy",
+					"alt": "Анатомия за 30 секунд"
 				},
-				"href": "",
+				"href": "#",
 				"title": "Анатомия за 30 секунд",
 				"description": "Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос"
 			},
 			{
 				"picture": {
-					"src": "images/ballet.jpg",
-					"alt": "Русские балетные сезоны »",
-					"name": "ballet"
+					"name": "ballet",
+					"alt": "Русские балетные сезоны »"
 				},
-				"href": "",
+				"href": "#",
 				"title": "Русские балетные сезоны",
 				"description": "В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре"
 			},
 			{
 				"picture": {
-					"src": "images/chudaki.jpg",
-					"alt": "Премьера спектакля «Чудаки и зануды»",
-					"name": "chudaki"
+					"name": "chudaki",
+					"alt": "Премьера спектакля «Чудаки и зануды»"
 				},
-				"href": "",
+				"href": "#",
 				"title": "Сферические чудаки",
 				"description": "Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»"
 			}
@@ -174,136 +158,85 @@
 		"pagination": [
 			{
 				"number": "1",
-				"href": "",
+				"href": "#",
 				"active": true
 			},
 			{
 				"number": "2",
-				"href": ""
+				"href": "#"
 			},
 			{
 				"number": "3",
-				"href": ""
+				"href": "#"
 			},
 			{
 				"number": "...",
-				"href": ""
+				"href": "#"
 			},
 			{
 				"number": "11",
-				"href": ""
+				"href": "#"
 			}
 		],
 		"video": {
 			"title": "Ох, уж этот балет",
 			"link": "Смотреть",
-			"href": ""
+			"href": "#"
 		}
 	},
 	"videoBanner": {
-		"src": "images/ballet-video.jpg",
+		"name": "ballet-video",
 		"alt": "Видео про балет",
 		"title": "Ох, уж этот балет",
 		"button": "Смотреть",
-		"href": "#",
-		"name": "ballet-video"
+		"href": "#"
 	},
 	"videos": [
 		{
-			"src": "/images/face-first.jpg",
-			"title": "Как все успевать",
-			"href": "",
 			"name": "face-first",
-			"alt": "Видео 'Как всё успевать'"
+			"alt": "Видео 'Как всё успевать'",
+			"title": "Как все успевать",
+			"href": "#"
 		},
 		{
-			"src": "/images/red-stone.jpg",
-			"title": "Красный камень",
-			"href": "",
 			"name": "red-stone",
-			"alt": "Видео 'Красный камень'"
+			"alt": "Видео 'Красный камень'",
+			"title": "Красный камень",
+			"href": "#"
 		},
 		{
-			"src": "/images/art.jpg",
-			"title": "Арт искусство",
-			"href": "",
 			"name": "art",
-			"alt": "Видео 'Арт искусство'"
+			"alt": "Видео 'Арт искусство'",
+			"title": "Арт искусство",
+			"href": "#"
 		},
 		{
-			"src": "/images/war-and-victory.jpg",
-			"title": "Видео 'Война и победа'",
-			"href": "",
 			"name": "war-and-victory",
-			"alt": "Война и победа"
+			"alt": "Война и победа",
+			"title": "Видео 'Война и победа'",
+			"href": "#"
 		}
 	],
 	"videosAside": [
 		{
 			"title": "Воздушные шары",
-			"href": "",
+			"href": "#",
 			"src": "/images/balloons.jpg",
 			"alt": "Видео про воздушные шары"
 		},
 		{
 			"title": "Необычная фотосессия",
-			"href": "",
+			"href": "#",
 			"src": "/images/photosession.jpg",
 			"alt": "Видео о необычной фотосессии"
 		},
 		{
 			"title": "Выставка птиц",
-			"href": "",
+			"href": "#",
 			"src": "/images/birds-expo.jpg",
 			"alt": "Видео про воздушные шары"
 		}
 	],
-	"fonts": [
-		{
-			"name": "playfairdisplay-bold"
-		},
-		{
-			"name": "raleway-light"
-		},
-		{
-			"name": "raleway-regular"
-		},
-		{
-			"name": "raleway-medium"
-		},
-		{
-			"name": "raleway-semibold"
-		},
-		{
-			"name": "raleway-bold"
-		}
-	],
-	"stylesheets": [
-		{
-			"name": "swiper"
-		},
-		{
-			"name": "style"
-		}
-	],
-	"site": {
-		"index": {
-			"title": "Главная страница",
-			"href": "index.html"
-		},
-		"media": [
-			{
-				"resolution": "768",
-				"name": "desktop"
-			}
-		],
-		"dirs": {
-			"images": "images/",
-			"fonts": "fonts/",
-			"stylesheets": "css/",
-			"js": "js/"
-		}
-	},
 	"head": {
 		"fonts": [
 			{
@@ -333,5 +266,24 @@
 				"name": "style"
 			}
 		]
+	},
+	"site": {
+		"index": {
+			"title": "Главная страница",
+			"href": "index.html",
+			"description": "Сайт «Новости культуры»"
+		},
+		"media": [
+			{
+				"resolution": "768",
+				"name": "desktop"
+			}
+		],
+		"dirs": {
+			"images": "images/",
+			"fonts": "fonts/",
+			"stylesheets": "css/",
+			"js": "js/"
+		}
 	}
 }

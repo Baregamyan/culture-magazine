@@ -18,8 +18,7 @@ mixin picture(className, alt, retina, responsive, name, extension, width, height
         srcset=retina?
         `${site.dirs.images}${name}${responsive? `-${size.name}`:""}@2x.webp 2x,
         ${site.dirs.images}${name}${responsive? `-${size.name}`:""}.webp 1x`
-        : `${site.dirs.images}${name}.webp`
-      )
+        : `${site.dirs.images}${name}.webp`)
       source(
         type=`image/${extension === 'jpg'? 'jpeg' : extension}`
         media=responsive? `(min-width:${size.resolution}px)`
@@ -27,8 +26,7 @@ mixin picture(className, alt, retina, responsive, name, extension, width, height
         srcset=retina?
         `${site.dirs.images}${name}${responsive? `-${size.name}`:""}@2x.${extension} 2x,
         ${site.dirs.images}${name}${responsive? `-${size.name}`:""}.${extension} 1x`
-        : `${site.dirs.images}${name}.${extension}`
-      )
+        : `${site.dirs.images}${name}.${extension}`)
       if responsive===false
         - break
     img(
@@ -36,6 +34,5 @@ mixin picture(className, alt, retina, responsive, name, extension, width, height
       srcset=retina?
       `${site.dirs.images}${name}@2x.${extension} 2x`
       : null
-      src=`${site.dirs.images}${name}.${extension}`
-      width=width height=height alt=alt
-    )
+      src=`${site.dirs.images}${name}.${extension}`, width=width, height=height, alt=alt
+      loading="lazy")

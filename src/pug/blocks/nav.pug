@@ -1,7 +1,6 @@
 nav.nav
-  button.nav__close
-  button.nav__open
+  h1.nav__title #{nav.title}
+  button.nav__close(type="button", aria-label="Закрыть меню навигации")
+  button.nav__open(type="button", aria-label="Открыть меню навигации")
     span.nav__hamburger
   include menu.pug
-  h1.nav__title #{nav.title}
-

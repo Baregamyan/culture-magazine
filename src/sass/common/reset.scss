@@ -23,10 +23,12 @@ dd {
   margin: 0;
 }
 
-/* Убираем внутренние отступы */
+/* Убираем внутренние отступы и даляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
 ul[class],
 ol[class] {
   padding: 0;
+  list-style: none;
+
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -37,12 +39,6 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -50,8 +46,8 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
   border-style: none;
 }
 

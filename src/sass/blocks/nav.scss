@@ -12,7 +12,6 @@
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-
   font-weight: 800;
   font-size: $font-super-large;
   font-family: $font-family-bold;
@@ -27,24 +26,20 @@
   position: absolute;
   top: 20px;
   right: 20px;
-
   width: 30px;
   height: 30px;
-
   background: transparent;
   border: none;
   cursor: pointer;
   &::before,
   &::after {
-    content: " ";
     position: absolute;
     top: 0;
     left: 15px;
-
     width: 2px;
     height: 30px;
-
     background-color: $color-menu-close;
+    content: " ";
   }
   &::before {
     transform: rotate(45deg);
@@ -59,6 +54,9 @@
   &--hide {
     display: none;
   }
+  &:focus-visible {
+    outline: 3px solid rgba($color: $color-primary, $alpha: 0.8);
+  }
   @media #{$media-md} {
     display: none;
   }
@@ -69,23 +67,23 @@
   top: 0;
   right: 0;
   left: 0;
-
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 50px;
   height: 50px;
   padding: 17px 13px;
-
   font-size: 0;
-
   background: $color-primary;
   border: 0;
   cursor: pointer;
   &--show {
     display: block;
+  }
+  &:focus-visible {
+    outline: 3px solid rgba($color: $color-secondary, $alpha: 0.8);
   }
   @media #{$media-md} {
     display: none;
@@ -94,58 +92,45 @@
 
 .nav__hamburger {
   position: relative;
-
   display: inline-block;
   width: 17px;
   height: 3px;
-
   vertical-align: middle;
-
   background-color: $color-bg;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
   transition: 0.5s;
   &::before {
-    content: "";
     position: absolute;
     top: -6px;
     left: 0;
-
     width: 17px;
     height: 3px;
-
     background-color: $color-bg;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
     transition: 0.5s;
+    content: "";
   }
   &::after {
-    content: "";
     position: absolute;
     top: 6px;
     left: 0;
-
     width: 17px;
     height: 3px;
-
     background-color: $color-bg;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
     transition: 0.5s;
+    content: "";
   }
   &--active {
     display: block;
-
     background-color: transparent;
   }
   &--active:before {
     top: 0;
-
     transform: rotate(45deg);
   }
   &--active:after {
     top: 0;
-
     transform: rotate(135deg);
   }
 }

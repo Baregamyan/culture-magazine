@@ -3,8 +3,6 @@ section.swiper-container.videos
     each video in videos
       .video.swiper-slide
         +picture("video__picture", video.alt, true, false, video.name, "jpg", auto, auto)
-        //- img.video__picture(src=video.src, alt=video.alt)
         h2.video__title #{video.title}
         a.button.button--watch(href=video.href) Смотреть
   .videos__pagination
-

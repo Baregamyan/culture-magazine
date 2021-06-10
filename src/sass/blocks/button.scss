@@ -2,17 +2,15 @@
   box-sizing: border-box;
   max-width: 180px;
   padding: 16px 30px;
+  color: $color-bg;
 
   font-weight: $font-weight-semibold;
+  letter-spacing: 2px;
   text-align: center;
-  color: $color-bg;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
-
   background-color: $color-button-bg;
   border: 2px solid $color-primary;
-
   transition: 0.4s;
   &:hover {
     background-color: $color-primary;
@@ -23,21 +21,18 @@
   }
   &--video-arrow {
     font-size: $font-sm;
-
     border: 1px solid $color-bg;
     &::after {
-      content: "";
 
       display: inline-block;
       width: 16px;
       height: 16px;
       margin-top: -5px;
       margin-left: 10px;
-
       vertical-align: middle;
-
       background-image: url(/images/arrow-button.png);
       background-repeat: no-repeat;
+      content: "";
     }
     @media #{$media-lg} {
       margin-top: auto;
@@ -48,5 +43,8 @@
     margin-right: auto;
     margin-bottom: 40px;
     margin-left: auto;
+  }
+  &:focus-visible {
+    outline: 3px solid rgba($color: $color-primary, $alpha: 0.8);
   }
 }

@@ -6,11 +6,17 @@ let slider = new Swiper('.recently', {
   spaceBetween: 150,
   pagination: {
     el: '.recently__pagination',
+    bulletElement: 'button',
     clickable: true
   },
   navigation: {
     nextEl: '.recently__control--next',
     prevEl: '.recently__control--prev',
+  },
+  a11y: {
+    prevSlideMessage: 'Предыдущий слайд',
+    nextSlideMessage: 'Следующий слайд',
+    paginationBulletMessage: 'Перейти на слайд номер {{index}}'
   }
 });
 
@@ -24,5 +30,10 @@ let sliderVideo = new Swiper('.videos', {
     el: '.videos__pagination',
     type: 'bullets',
     clickable: true
+  },
+  a11y: {
+    prevSlideMessage: 'Предыдущий слайд',
+    nextSlideMessage: 'Следующий слайд',
+    paginationBulletMessage: 'Перейти на слайд номер {{index}}'
   }
 })

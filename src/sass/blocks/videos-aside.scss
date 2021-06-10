@@ -1,6 +1,5 @@
 .videos-aside__video {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +18,6 @@
   position: absolute;
   top: 0;
   z-index: -1;
-
   width: 100%;
   height: 100%;
 
@@ -31,13 +29,13 @@
   max-width: 185px;
   margin-top: 40px;
   margin-bottom: 123px;
+  color: $color-bg;
 
   font-weight: $font-weight-black;
   font-size: $font-xxxl;
-  line-height: $line-height-xl;
   font-family: $font-family-bold;
-  text-align: center;
-  color: $color-bg;
-  text-transform: uppercase;
+  line-height: $line-height-xl;
   letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
 }

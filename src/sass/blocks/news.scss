@@ -28,9 +28,10 @@
 }
 
 .news__article {
+  position: relative;
   margin-bottom: 31px;
   @media #{$media-md} {
-    max-width: 290px;
+    max-width: 305px;
   }
   &--main {
     margin-bottom: 25px;
@@ -47,15 +48,14 @@
 
 .news__article-picture-wrapper {
   position: relative;
-
   margin-right: 15px;
 }
 
 .news__article-picture {
   width: 40vw;
+  max-width: inherit;
 
   object-fit: cover;
-  max-width: inherit;
   @media #{$media-md} {
     width: 127px;
   }
@@ -63,13 +63,11 @@
 
 .news__article-text {
   z-index: 3;
-
   align-self: center;
 }
 
 .news__article-title {
   margin-bottom: 7px;
-
   font-weight: $font-weight-bold;
   font-size: $font-md;
   font-family: $font-family-bold;
@@ -77,16 +75,13 @@
 
 .news__article-description {
   margin-bottom: 0;
-
   font-size: $font-xs;
   line-height: 15px;
 }
 
 .news__article-wrapper {
   position: relative;
-
   display: flex;
-
   color: $color-base;
   text-decoration: none;
   &--main {
@@ -96,7 +91,6 @@
     & .news__article-picture-wrapper {
       position: absolute;
       top: 0;
-
       width: 100%;
       height: 100%;
       margin-right: 0;
@@ -105,7 +99,6 @@
         top: 0;
         left: 0;
         z-index: -1;
-
         width: 100%;
         height: 100%;
         margin-right: 0;
@@ -120,7 +113,6 @@
       padding-left: 15px;
       & h3.news__article-title {
         margin-bottom: 15px;
-
         font-size: $font-xxl;
       }
       & p.news__article-description {
@@ -128,13 +120,17 @@
         line-height: 21px;
       }
     }
-    &:hover {
+    & ~ .bookmark {
+      top: 0px;
+      right: 10px;
+    }
+    &:hover,
+    &:focus {
+      & .news__article-description {
+        color: white;
+      }
       & .overlay--cover {
         z-index: 3;
-
-        opacity: 1;
-      }
-      & .bookmark {
         opacity: 1;
       }
     }
@@ -142,7 +138,11 @@
   @media #{$media-md} {
     max-height: 92px;
   }
-  &:hover {
+  &:hover,
+  &:focus {
+    & ~ .bookmark {
+      opacity: 1;
+    }
     & .news__article-text {
       & .news__article-title {
         color: $color-primary;
@@ -151,7 +151,6 @@
     & .news__article-picture-wrapper {
       & .overlay--cover {
         z-index: 3;
-
         opacity: 1;
       }
       & .bookmark {

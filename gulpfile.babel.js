@@ -54,7 +54,8 @@ const path = {
     save: `${dirs.dest}/images`
   },
   libs: {
-    swiper: `./node_modules/swiper`
+    swiper: `./node_modules/swiper`,
+    focusVisiblePolyfill: `./node_modules/focus-visible`
   }
 };
 
@@ -119,7 +120,8 @@ export const clean = () => del([dirs.dest]);
 export const devWatch = () => {
   const bs = browserSync.init({
     server: dirs.dest,
-    notify: false
+    notify: false,
+    open: false
   });
   watch(`${path.styles.root}/**/*.scss`, styles).on('change', bs.reload);
   watch(`${path.views.root}/**/*.pug`, views).on('change', bs.reload);
@@ -155,15 +157,12 @@ const swiperJS = () => {
     .pipe(dest(`${path.scripts.save}`))
 };
 
-/**
- * Задачи для разработки
- */
-// export const dev = series(clean, parallel(buildStyles, buildViews, buildScripts), devWatch);
-export const dev = series(json, parallel(styles, views, scripts, sprite, images), devWatch);
+const focusVisiblePolyfill = () => {
+  return src(`${path.libs.focusVisiblePolyfill}/dist/focus-visible.min.js`)
+    .pipe(dest(`${path.scripts.save}`))
+};
 
 /**
  * Для билда
  */
-export const build = series(clean, fonts, json, parallel(swiperCSS, swiperJS), parallel(styles, views, images, scripts));
-
-export default dev;
+export const build = series(clean, fonts, json, parallel(swiperCSS, swiperJS, focusVisiblePolyfill), parallel(styles, views, images, scripts));
