@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Сайт для интернет издания 'Новости культуры'",
   "main": "",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
@@ -12,6 +11,7 @@
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
     "focus-visible": "^5.2.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -46,7 +46,8 @@
     "build": "npm run test && gulp build",
     "start": "gulp build && gulp devWatch",
     "watch": "gulp watch",
-    "test": "npx pug-lint src/pug/**/*.pug && stylelint src/sass/**/*.scss"
+    "test": "npx pug-lint src/pug/**/*.pug && stylelint src/sass/**/*.scss",
+    "ghpages": "npm run build && npx gh-pages -d build"
   },
   "repository": {
     "type": "git",
