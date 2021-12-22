@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт «Новости культуры»">
+    <link rel="preload" href="fonts/playfairdisplay-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/raleway-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <svg style="display:none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="bookmark" viewBox="0 0 14 18">
+<path d="M1 1H13V16L7 11.1351L1 16V1Z" stroke="#FF7931" stroke-width="1.5"/>
+</symbol><symbol id="close" viewBox="0 0 30 30"><g><g/></g></symbol></svg>
+    </svg>
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__title">Новости культуры</h1>
+        <button class="nav__close" type="button" aria-label="Закрыть меню навигации"></button>
+        <button class="nav__open" type="button" aria-label="Открыть меню навигации"><span class="nav__hamburger"></span></button>
+        <ul class="menu menu--no-js">
+          <li><a class="menu__item" href="#">Новости</a></li>
+          <li><a class="menu__item" href="#">Обзоры</a></li>
+          <li><a class="menu__item" href="#">Музыка</a></li>
+          <li><a class="menu__item" href="#">Архитектура</a></li>
+          <li><a class="menu__item" href="#">Кино</a></li>
+          <li><a class="menu__item" href="#">Театр</a></li>
+          <li><a class="menu__item" href="#">Литература</a></li>
+          <li><a class="menu__item" href="#">Религия</a></li>
+          <li><a class="menu__item" href="#">Живопись</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="recently swiper-container">
+        <div class="swiper-wrapper">
+          <div class="recently__wrapper swiper-slide recently__wrapper--underwater-hotel">
+            <div class="overlay recently__overlay"></div>
+              <picture>
+                <source type="image/webp" media="(min-width:768px)" srcset="images/underwaterHotel-desktop@2x.webp 2x,
+        images/underwaterHotel-desktop.webp 1x">
+                <source type="image/jpeg" media="(min-width:768px)" srcset="images/underwaterHotel-desktop@2x.jpg 2x,
+        images/underwaterHotel-desktop.jpg 1x"><img class="recently__picture" srcset="images/underwaterHotel@2x.jpg 2x" src="images/underwaterHotel.jpg" width="500" height="420" alt="Отель в Думай под водой" loading="lazy">
+              </picture><span class="recently__mark">Новое</span>
+            <h2 class="recently__title">Подводный отель</h2>
+            <div class="recently__controls">
+              <button class="recently__control recently__control--prev" type="button">Предыдущая<span class="recently__control-arrow recently__control-arrow--prev"></span></button>
+              <button class="recently__control recently__control--next" type="button">Следующая<span class="recently__control-arrow recently__control-arrow--next"></span></button>
+            </div>
+            <p class="recently__text">Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет  нефти</p>
+            <div class="recently__pagination"></div>
+          </div>
+        </div>
+      </section>
+      <div class="main-content">
+        <aside class="main-content__left-aside">
+          <section class="news">
+            <h2 class="news__title">Новости</h2>
+            <div class="news__wrapper">
+              <article class="news__article news__article--main"><a class="news__article-wrapper news__article-wrapper--main" href="#">
+                  <div class="overlay overlay--cover"></div>
+                  <div class="news__article-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/musicAward@2x.webp 2x,
+        images/musicAward.webp 1x">
+                        <source type="image/jpeg" srcset="images/musicAward@2x.jpg 2x,
+        images/musicAward.jpg 1x"><img class="news__article-picture" srcset="images/musicAward@2x.jpg 2x" src="images/musicAward.jpg" alt="Премия Russian World Music Awards" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <div class="news__article-text">
+                    <h3 class="news__article-title">Новости культуры России и всего мира</h3>
+                    <p class="news__article-description">В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards</p>
+                  </div></a>
+                <button class="bookmark" type="button" title="Добавить в закладки" tabindex="0"></button>
+              </article>
+              <article class="news__article"><a class="news__article-wrapper" href="#">
+                  <div class="news__article-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/leonov@2x.webp 2x,
+        images/leonov.webp 1x">
+                        <source type="image/jpeg" srcset="images/leonov@2x.jpg 2x,
+        images/leonov.jpg 1x"><img class="news__article-picture" srcset="images/leonov@2x.jpg 2x" src="images/leonov.jpg" alt="Памятник Евгению Леонову" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <div class="news__article-text">
+                    <h3 class="news__article-title">Открытие нового памятника Евгению Леонову</h3>
+                    <p class="news__article-description">10 сентября в 15:00 был открыт памятник писателю</p>
+                  </div></a>
+                <button class="bookmark" type="button" title="Добавить в закладки" tabindex="0"></button>
+              </article>
+              <article class="news__article"><a class="news__article-wrapper" href="#">
+                  <div class="news__article-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/writers@2x.webp 2x,
+        images/writers.webp 1x">
+                        <source type="image/jpeg" srcset="images/writers@2x.jpg 2x,
+        images/writers.jpg 1x"><img class="news__article-picture" srcset="images/writers@2x.jpg 2x" src="images/writers.jpg" alt="Беседы с писателями" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <div class="news__article-text">
+                    <h3 class="news__article-title">Беседы с писателями</h3>
+                    <p class="news__article-description">Русские писатели беседуют о важности искусства.</p>
+                  </div></a>
+                <button class="bookmark" type="button" title="Добавить в закладки" tabindex="0"></button>
+              </article>
+              <article class="news__article"><a class="news__article-wrapper" href="#">
+                  <div class="news__article-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/patrick@2x.webp 2x,
+        images/patrick.webp 1x">
+                        <source type="image/jpeg" srcset="images/patrick@2x.jpg 2x,
+        images/patrick.jpg 1x"><img class="news__article-picture" srcset="images/patrick@2x.jpg 2x" src="images/patrick.jpg" alt="Святой Патрик" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <div class="news__article-text">
+                    <h3 class="news__article-title">День и ночь св. Патрика: встреча старых друзей</h3>
+                    <p class="news__article-description">Не Джойсом единым живет Ирландия!</p>
+                  </div></a>
+                <button class="bookmark" type="button" title="Добавить в закладки" tabindex="0"></button>
+              </article>
+            </div>
+          </section>
+          <section class="reviews">
+            <h2 class="reviews__title">Обзоры</h2>
+            <div class="reviews__wrapper">
+              <article class="reviews__review"><a class="reviews__review-wrapper" href="#">
+                  <div class="reviews__review-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/monparnas@2x.webp 2x,
+        images/monparnas.webp 1x">
+                        <source type="image/jpeg" srcset="images/monparnas@2x.jpg 2x,
+        images/monparnas.jpg 1x"><img class="reviews__review-picture" srcset="images/monparnas@2x.jpg 2x" src="images/monparnas.jpg" alt="Выставка «Шальные годы Монпарнаса»" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <h3 class="reviews__review-title">«Шальные годы» Монпарнаса</h3>
+                  <p class="reviews__review-description">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p></a>
+                <button class="bookmark" type="button" title="Добавить в закладки"></button>
+              </article>
+              <article class="reviews__review"><a class="reviews__review-wrapper" href="#">
+                  <div class="reviews__review-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/anatomy@2x.webp 2x,
+        images/anatomy.webp 1x">
+                        <source type="image/jpeg" srcset="images/anatomy@2x.jpg 2x,
+        images/anatomy.jpg 1x"><img class="reviews__review-picture" srcset="images/anatomy@2x.jpg 2x" src="images/anatomy.jpg" alt="Анатомия за 30 секунд" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <h3 class="reviews__review-title">Анатомия за 30 секунд</h3>
+                  <p class="reviews__review-description">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p></a>
+                <button class="bookmark" type="button" title="Добавить в закладки"></button>
+              </article>
+              <article class="reviews__review"><a class="reviews__review-wrapper" href="#">
+                  <div class="reviews__review-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/ballet@2x.webp 2x,
+        images/ballet.webp 1x">
+                        <source type="image/jpeg" srcset="images/ballet@2x.jpg 2x,
+        images/ballet.jpg 1x"><img class="reviews__review-picture" srcset="images/ballet@2x.jpg 2x" src="images/ballet.jpg" alt="Русские балетные сезоны »" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <h3 class="reviews__review-title">Русские балетные сезоны</h3>
+                  <p class="reviews__review-description">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p></a>
+                <button class="bookmark" type="button" title="Добавить в закладки"></button>
+              </article>
+              <article class="reviews__review"><a class="reviews__review-wrapper" href="#">
+                  <div class="reviews__review-picture-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="images/chudaki@2x.webp 2x,
+        images/chudaki.webp 1x">
+                        <source type="image/jpeg" srcset="images/chudaki@2x.jpg 2x,
+        images/chudaki.jpg 1x"><img class="reviews__review-picture" srcset="images/chudaki@2x.jpg 2x" src="images/chudaki.jpg" alt="Премьера спектакля «Чудаки и зануды»" loading="lazy">
+                      </picture>
+                    <div class="overlay overlay--cover"></div>
+                  </div>
+                  <h3 class="reviews__review-title">Сферические чудаки</h3>
+                  <p class="reviews__review-description">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p></a>
+                <button class="bookmark" type="button" title="Добавить в закладки"></button>
+              </article>
+            </div>
+            <div class="reviews__pagination">
+              <div class="reviews__pagination-wrapper">
+                <button class="reviews__pagination-button reviews__pagination-button--back" type="button" title="Переход к предыдущим статьям"></button>
+                <div class="reviews__pagination-numbers"><a class="reviews__pagination-number reviews__pagination-number--active" href="#">1</a><a class="reviews__pagination-number" href="#">2</a><a class="reviews__pagination-number" href="#">3</a><a class="reviews__pagination-number" href="#">...</a><a class="reviews__pagination-number" href="#">11</a>
+                </div>
+                <button class="reviews__pagination-button reviews__pagination-button--next" type="button" title="Переход к следующим статьям"></button>
+              </div>
+            </div>
+          </section>
+          <section class="video-banner">
+            <div class="video-banner__video">
+              <div class="video-banner__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width:768px)" srcset="images/ballet-video-desktop@2x.webp 2x,
+        images/ballet-video-desktop.webp 1x">
+                    <source type="image/jpeg" media="(min-width:768px)" srcset="images/ballet-video-desktop@2x.jpg 2x,
+        images/ballet-video-desktop.jpg 1x"><img class="video-banner__picture" srcset="images/ballet-video@2x.jpg 2x" src="images/ballet-video.jpg" alt="Видео про балет" loading="lazy">
+                  </picture>
+              </div>
+              <div class="video-banner__text">
+                <h2 class="video-banner__title">Ох, уж этот балет</h2><a class="button button--video-arrow" href="#">Смотреть</a>
+              </div>
+            </div>
+          </section>
+          <section class="swiper-container videos">
+            <div class="swiper-wrapper videos__wrapper">
+              <div class="video swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/face-first@2x.webp 2x,
+        images/face-first.webp 1x">
+                    <source type="image/jpeg" srcset="images/face-first@2x.jpg 2x,
+        images/face-first.jpg 1x"><img class="video__picture" srcset="images/face-first@2x.jpg 2x" src="images/face-first.jpg" alt="Видео 'Как всё успевать'" loading="lazy">
+                  </picture>
+                <h2 class="video__title">Как все успевать</h2><a class="button button--watch" href="#">Смотреть</a>
+              </div>
+              <div class="video swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/red-stone@2x.webp 2x,
+        images/red-stone.webp 1x">
+                    <source type="image/jpeg" srcset="images/red-stone@2x.jpg 2x,
+        images/red-stone.jpg 1x"><img class="video__picture" srcset="images/red-stone@2x.jpg 2x" src="images/red-stone.jpg" alt="Видео 'Красный камень'" loading="lazy">
+                  </picture>
+                <h2 class="video__title">Красный камень</h2><a class="button button--watch" href="#">Смотреть</a>
+              </div>
+              <div class="video swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/art@2x.webp 2x,
+        images/art.webp 1x">
+                    <source type="image/jpeg" srcset="images/art@2x.jpg 2x,
+        images/art.jpg 1x"><img class="video__picture" srcset="images/art@2x.jpg 2x" src="images/art.jpg" alt="Видео 'Арт искусство'" loading="lazy">
+                  </picture>
+                <h2 class="video__title">Арт искусство</h2><a class="button button--watch" href="#">Смотреть</a>
+              </div>
+              <div class="video swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="images/war-and-victory@2x.webp 2x,
+        images/war-and-victory.webp 1x">
+                    <source type="image/jpeg" srcset="images/war-and-victory@2x.jpg 2x,
+        images/war-and-victory.jpg 1x"><img class="video__picture" srcset="images/war-and-victory@2x.jpg 2x" src="images/war-and-victory.jpg" alt="Война и победа" loading="lazy">
+                  </picture>
+                <h2 class="video__title">Видео 'Война и победа'</h2><a class="button button--watch" href="#">Смотреть</a>
+              </div>
+            </div>
+            <div class="videos__pagination"></div>
+          </section>
+        </aside>
+        <aside class="main-content__right-aside">
+          <section class="videos-aside">
+            <div class="videos-aside__video"><img class="videos-aside__picture" src="/images/balloons.jpg" alt="Видео про воздушные шары">
+              <h2 class="videos-aside__title">Воздушные шары</h2><a class="button button--video-arrow" href="#">Смотреть</a>
+            </div>
+            <div class="videos-aside__video"><img class="videos-aside__picture" src="/images/photosession.jpg" alt="Видео о необычной фотосессии">
+              <h2 class="videos-aside__title">Необычная фотосессия</h2><a class="button button--video-arrow" href="#">Смотреть</a>
+            </div>
+            <div class="videos-aside__video"><img class="videos-aside__picture" src="/images/birds-expo.jpg" alt="Видео про воздушные шары">
+              <h2 class="videos-aside__title">Выставка птиц</h2><a class="button button--video-arrow" href="#">Смотреть</a>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/focus-visible.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
