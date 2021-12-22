@@ -1196,7 +1196,7 @@ button:focus-visible,
   padding: 0;
 
   background-color: transparent;
-  background-image: url("/images/arrow-left.png");
+  background-image: url("../images/arrow-left.png");
   background-repeat: no-repeat;
   background-size: 100%;
   border: none;
@@ -1207,7 +1207,7 @@ button:focus-visible,
   margin-right: 0;
   margin-left: 21px;
 
-  background-image: url("/images/arrow-right.png");
+  background-image: url("../images/arrow-right.png");
 }
 @media (min-width: 768px) {
   .reviews__pagination-button--next::before {
